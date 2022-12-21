@@ -1,0 +1,140 @@
+/* 
+pink: #EFB0C9
+blue: #a2d2ff
+white: #ffffff 
+Christmas: https://media.giphy.com/media/Kcg05wnuslB8oj6Kir/giphy.gif
+Cat and unicorn: https://media.giphy.com/media/2A75RyXVzzSI2bx4Gj/giphy.gif
+Too HOt: https://media.giphy.com/media/5xtDarIN81U0KvlnzKo/giphy.gif
+Cool: https://media.giphy.com/media/JUqiFbumTAPYIeM8yJ/giphy.gif
+Dave Ramsey: https://media.giphy.com/media/3o7WIQhYrrHCOg9Zn2/giphy.gif
+Chair: https://media.giphy.com/media/BPJmthQ3YRwD6QqcVD/giphy.gif
+*/
+
+body {
+  font-family: "Happy Monkey", cursive;
+  text-align: center;
+  color: #ffffff;
+  background: linear-gradient(#a2d2ff, pink);
+  margin: 0px;
+  /* 
+  display: flex;
+  flex-direction: column;
+  align-items: center; */
+}
+
+@keyframes sliding_in {
+  0% {
+    transform: translateX(-500px);
+  }
+  25% {
+    transform: translateX(250px);
+  }
+  50% {
+    transform: translateX(-125px);
+  }
+  75% {
+    transform: translateX(62px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  text-shadow: 0 0 1px black;
+}
+
+#bday-age {
+  background: #efb0c9;
+  border-radius: 11px;
+  padding: 5px 10px;
+
+  margin: 5px 0 10px 0;
+}
+
+#bday-date {
+  background: #efb0c9;
+  border-radius: 11px;
+  padding: 5px 10px;
+
+  margin: 0;
+}
+
+#main-img {
+  width: 200px;
+  border-radius: 50%;
+  /* box-shadow: 0 0 20px black; */
+  border: 5px solid #efb0c9;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  animation: sliding_in 5s ease-in-out;
+}
+
+.gift-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.gift-title {
+  margin: 10px 0;
+}
+
+.gift-hint {
+  margin: 10px 0;
+}
+
+.gift-img {
+  height: 500px;
+  width: 500px;
+  background-size: cover;
+  background-image: url("./images/gift-cover.jpg");
+  border: 8px solid aliceblue;
+  border-radius: 20px;
+}
+
+.footer-section {
+  font-style: italic;
+  background-color: black;
+  padding: 20px 0;
+}
+
+#excited-png:hover {
+  background-image: url("https://media.giphy.com/media/2A75RyXVzzSI2bx4Gj/giphy.gif");
+}
+
+#hot-png:hover {
+  background-image: url("https://media.giphy.com/media/5xtDarIN81U0KvlnzKo/giphy.gif");
+}
+
+#cool-png:hover {
+  background-image: url("https://media.giphy.com/media/JUqiFbumTAPYIeM8yJ/giphy.gif");
+}
+
+#ramsey-png:hover {
+  background-image: url("https://media.giphy.com/media/3o7WIQhYrrHCOg9Zn2/giphy.gif");
+}
+
+#chair-png {
+  height: 200px;
+}
+
+#chair-png:hover {
+  background-image: url("https://media.giphy.com/media/BPJmthQ3YRwD6QqcVD/giphy.gif");
+  background-size: auto;
+}
+
+#course_link {
+  color: white;
+  text-shadow: 0 0 3px #ffffff;
+}
